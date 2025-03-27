@@ -23,7 +23,7 @@ export const Notes: CollectionConfig = {
     {
       name: 'content',
       type: 'richText',
-      required: true,
+      
     },
   ],
 }
