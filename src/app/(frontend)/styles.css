@@ -89,10 +89,24 @@ svg {
   vertical-align: middle;
 }
 
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: currentColor;
+
+  &:focus {
+    outline: none;
+  }
+}
+
 .home {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 100vh;
   padding: 45px;

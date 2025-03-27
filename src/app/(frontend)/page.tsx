@@ -5,6 +5,13 @@ import { fileURLToPath } from 'url'
 
 import config from '@/payload.config'
 import './styles.css'
+import Link from 'next/link'
+
+const subjects = [
+  { label: 'Linguistics', value: 'linguistics' },
+  { label: 'Math', value: 'math' },
+  { label: 'SOFTENG', value: 'softeng' },
+]
 
 export default async function HomePage() {
   const headers = await getHeaders()
@@ -16,8 +23,14 @@ export default async function HomePage() {
 
   return (
     <div className="home">
-      <h1>Welcome Rebecca&apos;s to Study App</h1>
-
+      <h1>Welcome to Rebecca&apos;s Study App</h1>
+      <div className="subject-buttons">
+        {subjects.map((subject) => (
+          <Link key={subject.value} href={`/notes/${subject.value}`}>
+            <button className="subject-button">{subject.label}</button>
+          </Link>
+        ))}
+      </div>
     </div>
   )
 }

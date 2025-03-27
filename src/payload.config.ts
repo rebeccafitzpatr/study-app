@@ -9,6 +9,7 @@ import sharp from 'sharp'
 
 import { Users } from './collections/Users'
 import { Media } from './collections/Media'
+import { Notes } from './collections/Notes'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
