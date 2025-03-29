@@ -24,13 +24,6 @@ export default async function HomePage() {
   return (
     <div className="home">
       <h1>Welcome to Rebecca&apos;s Study App</h1>
-      <div className="subject-buttons">
-        {subjects.map((subject) => (
-          <Link key={subject.value} href={`/notes/${subject.value}`}>
-            <button className="subject-button">{subject.label}</button>
-          </Link>
-        ))}
-      </div>
     </div>
   )
 }

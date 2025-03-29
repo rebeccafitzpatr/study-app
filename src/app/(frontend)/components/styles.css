@@ -1,0 +1,11 @@
+.navbar {
+    display: block;
+    margin: auto;
+    
+}
+
+.subject-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
