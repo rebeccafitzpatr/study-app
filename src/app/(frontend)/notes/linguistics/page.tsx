@@ -7,6 +7,10 @@ import { fileURLToPath } from 'url'
 import config from '@/payload.config'
 import { RichText } from '@payloadcms/richtext-lexical/react'
 
+export const metadata = {
+  title: 'LINGUIST notes',
+}
+
 export default async function LinguisticsPage() {
   const headers = await getHeaders()
   const payloadConfig = await config

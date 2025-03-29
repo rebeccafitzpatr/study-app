@@ -3,8 +3,8 @@ import './styles.css'
 import Navbar from './components/Navbar'
 
 export const metadata = {
-  description: 'A blank template using Payload in a Next.js app.',
-  title: 'Payload Blank Template',
+  description: 'Rebecca&apos;s Study App',
+  title: 'studyapp',
 }
 
 export default async function RootLayout(props: { children: React.ReactNode }) {
